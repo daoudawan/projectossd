@@ -20,7 +20,7 @@ class Star:
     def reset(self, y=0):
         self.x = random.uniform(0, GAME_W)
         self.y = y
-        self.size = random.choice([1, 1, 1, 2, 2, 3])
+        self.size = random.choice([5, 5, 5, 10, 10, 15])
         self.speed = random.uniform(0.4, 2.2)
         self.color = random.choice(STAR_COLORS)
         self.alpha_step = random.choice([0, 0, 1])  # occasional twinkle
